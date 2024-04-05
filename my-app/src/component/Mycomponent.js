@@ -25,6 +25,20 @@ class myComponent extends React.Component {
         console.log(event);
 
     }
+    handleOnchange = (event) => {
+        this.setState({
+            name: event.target.value
+        })
+        console.log(event.target.value);
+
+    }
+    handleClickButton = (event) => {
+        console.log(this.state);
+    }
+    handleOnSubmit = (event) => {
+        event.preventDefault();
+        alert('ok');
+    }
     render() {
         var nb = Math.random();//cach1
         return (
@@ -38,6 +52,11 @@ class myComponent extends React.Component {
                 //<button onClick={(event) => { this.handleClick(event) }}>Click</button>
 
                 <button onMouseOver={this.handleOnMouseOver}>Click</button>
+
+                <form onSubmit={(event) => { this.handleOnSubmit(event) }}>
+                    <input type='text' onChange={(event) => { this.handleOnchange(event) }}></input>
+                    <button type='submit' >submit</button>
+                </form>
 
 
             </div>
