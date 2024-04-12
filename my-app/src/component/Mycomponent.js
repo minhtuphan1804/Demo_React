@@ -53,8 +53,8 @@ class myComponent extends React.Component {
 
                 <button onMouseOver={this.handleOnMouseOver}>Click</button>
 
-                <form onSubmit={(event) => { this.handleOnSubmit(event) }}>
-                    <input type='text' onChange={(event) => { this.handleOnchange(event) }}></input>
+                <form onSubmit={(event) => { this.handleOnSubmit(event) }} >
+                    <input type='text' value={this.state.name} onChange={(event) => { this.handleOnchange(event) }}></input>
                     <button type='submit' >submit</button>
                 </form>
 
