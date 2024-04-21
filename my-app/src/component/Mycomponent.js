@@ -1,7 +1,7 @@
 // class component
 //function component
 import React from 'react';
-import UserInfo from './UserInfo';
+
 import DisplayInfor from './DisplayInfor';
 class myComponent extends React.Component {
 
@@ -12,7 +12,7 @@ class myComponent extends React.Component {
             { id: 1, name: "Nguyen Van A", age: 14 },
             { id: 2, name: "Nguyen Van b", age: 15 },
 
-            { id: 3, name: "Nguyen Van c", age: 16 },
+            { id: 3, name: "Nguyen Van c", age: 22 },
 
         ]
     };
@@ -56,7 +56,7 @@ class myComponent extends React.Component {
     //     alert('ok');
     // }
     render() {
-        var nb = Math.random();
+
         return (
             <div>
                 {/* {nb}
